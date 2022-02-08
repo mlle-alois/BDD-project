@@ -12,6 +12,14 @@ public class TennisGame {
 		this.playerTwoName = playerTwoName;
 	}
 
+	public String getPlayerOneName() {
+		return playerOneName;
+	}
+
+	public String getPlayerTwoName() {
+		return playerTwoName;
+	}
+
 	public String getScore() {
 
 		if (hasWinner()) {
