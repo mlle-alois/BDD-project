@@ -123,6 +123,3 @@ Feature: Tennis Game
     And "Marc" has scored 2 ball
     When "Marc" scores
     Then the score should be "Thirty,Forty"
-
-  #TODO thirty,forty
-  #TODO forty,thirty
