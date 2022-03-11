@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TennisGameTest {
 
-    TennisGame game = new TennisGame("Boris Becker", "Bj�rn Borg");
+    TennisGame game = new TennisGame("Boris Becker", "Bjorn Borg");
 
     @Test
     public void testNewGameShouldReturnLoveAll() {
@@ -68,7 +68,7 @@ public class TennisGameTest {
         createScore(1, 4);
 
         String score = game.getScore();
-        assertEquals("Bj�rn Borg wins", score);
+        assertEquals("Bjorn Borg wins", score);
     }
 
     @Test
@@ -83,7 +83,7 @@ public class TennisGameTest {
         createScore(4, 5);
 
         String score = game.getScore();
-        assertEquals("Advantage Bj�rn Borg", score);
+        assertEquals("Advantage Bjorn Borg", score);
     }
 
     @Test
@@ -98,14 +98,14 @@ public class TennisGameTest {
     public void testPlayerTwoWins() {
         createScore(2, 4);
         String score = game.getScore();
-        assertEquals("Bj�rn Borg wins", score);
+        assertEquals("Bjorn Borg wins", score);
     }
 
     @Test
     public void testPlayerTwoWinsAfterAdvantage() {
         createScore(6, 8);
         String score = game.getScore();
-        assertEquals("Bj�rn Borg wins", score);
+        assertEquals("Bjorn Borg wins", score);
     }
 
     @Test
